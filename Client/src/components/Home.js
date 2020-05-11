@@ -8,7 +8,7 @@ export default class Home extends Component {
                 <div className="parrent-wrapper">
                     <table border="0" width="100%" backgroundColor="#287FO" height="60px"> 
                         <tr>
-                            <td align="right" className="text-type"><img src="logo.png"/></td>
+                        <i class="fas fa-book-open"></i>
                             <td>
                                 <input type="text" placeholder="Search for produts brands, and more" name="search" style={{width:"550px",height:"35px"}}/>
                                 <input type="button" value="search"  style={{width:"75px",height:"35px"}}/>

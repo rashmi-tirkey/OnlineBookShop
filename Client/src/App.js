@@ -1,14 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import { BrowserRouter as Router, Route,Switch} from "react-router-dom";
-import './App.css';
+
 import About from './components/about';
 import Home from './components/Home';
 import NotFound from './PageNotFound/NotFound';
 import Login from './components/login'
+
+import './App.scss';
+
 function App() {
   return(
-    <div className="container-fluid">
+    <div className="x">
     <Router>
       <div className="parent-wrapper"> 
         <Switch>
