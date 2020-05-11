@@ -1,0 +1,18 @@
+.parrent-wrapper{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+        background-color: #2196F3;
+}
+.parrent-wrapper p {
+        float: left;
+        display: flex;
+        color: black;
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        text-decoration: none;
+        font-size: 17px;
+}
+.text-type{
+        color: white;
+}

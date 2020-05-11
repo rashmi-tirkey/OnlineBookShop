@@ -1,0 +1,24 @@
+.dice{
+    text-align: center; 
+    display: inline-block;
+    height: 500px;
+    max-width: 600px;
+    min-width: 270px;
+    margin-top: 10px;
+
+}
+.first-div{
+    background-color: dodgerblue;
+    color: white;
+}
+.second-div{
+    border: none;
+    background-color: floralwhite;
+}
+user-input{
+    border:none;
+}
+.btn{
+    width: 60px;
+    background-color: goldenrod;
+}
