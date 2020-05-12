@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 
-import allReducer from './reducers';
+import allReducer from './Reducers';
 import App from './App';
 
-import './index.scss'
+import './Assets/BaseStyle/baseStyle.scss'
 import'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));

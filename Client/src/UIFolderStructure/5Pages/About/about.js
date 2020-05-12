@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 
+import {AboutPageConstant} from './../../../Constant/about';
+
 export default class About extends Component {
     render() {
         return (
             <div>
-                <h1>This About Page</h1>
+                <h1>{AboutPageConstant.name}</h1>
             </div>
         )
     }
