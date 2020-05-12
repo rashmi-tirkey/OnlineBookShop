@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
-import bookdata from './booklist.json'
-import "./../ComponentCSS/Home.scss"
+
+import SearchInputBox from './../../1Atoms/SearchInputBox/searchInputBox'
+import "./home.scss"
+import bookdata from './../../../Constant/booklist.json'
+
 export default class Home extends Component {
     render() {
         return (
@@ -9,21 +12,21 @@ export default class Home extends Component {
                     <div className="child-wrapper">
                         <div className="menu-class">
                             <font className="header"><i className="fad fa-books" aria-hidden="true"></i>BOOK STORE</font>
-                            <input type="text" placeholder="Search for produts brands, and more" name="search" style={{width:"550px",height:"35px"}}/>
-                            <input type="button" value="search"  className="search"/>
-                            <input type="button"  value="Login" className="login"/>
-                              <font  className="arr more" >More &#9663;</font>
-                              <font><i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart</font>
+                            <SearchInputBox inputType="text" placeholder="Search for produts brands, and more" name="search"/>
+                            <input type="button" value="search" className="search" />
+                            <input type="button" value="Login" className="login" />
+                            <font className="arr more" >More &#9663;</font>
+                            <font><i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart</font>
                         </div>
-                    </div> 
+                    </div>
                 </div>
-               
+
                 <h3>This is Book List</h3>
-                <div  style={{display:"flex", flexWrap:"wrap",textAlign:"center"}}>
+                <div style={{ display: "flex", flexWrap: "wrap", textAlign: "center" }}>
                     {
-                        bookdata.map((data,index) =>{
-                            return(
-                                <div style={{padding:"10px",margin:"10px",width:"29%"}}>
+                        bookdata.map((data, index) => {
+                            return (
+                                <div style={{ padding: "10px", margin: "10px", width: "29%" }}>
                                     <div>
                                         <img src={data.thumbnailUrl}></img>
                                     </div>
@@ -34,7 +37,7 @@ export default class Home extends Component {
                             )
                         })
                     }
-                 </div>
+                </div>
             </div>
         )
     }
