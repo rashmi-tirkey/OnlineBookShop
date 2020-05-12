@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./../ComponentCSS/Login.css"
+import "./../ComponentCSS/Login.scss"
 export default class Login extends Component {
     render() {
         return (
@@ -12,14 +12,16 @@ export default class Login extends Component {
                        Recommendations</p></span>
                     </div>
                     <div className="second-div dice">
-                    <div className="username user-input">
-					    <input type="text" name="fname" placeholder="First Name" onchange=""/>
-                    </div>
-                    <div className="password user-input">
-                        <input type="password" name="name" placeholder="Last Name" onkeypress=""/>
-                    </div>
+                        <div className="username user-input">
+                            <input type="text" name="fname" placeholder="Enetr EmailId" onchange=""/>
+                        </div>
+                        <div className="password user-input">
+                            <input type="password" name="name" placeholder="Enter Password" onkeypress=""/>
+                        </div>
                         <button type="button" className="btn">Login</button>
+                        
                     </div>
+                    
                 </div>
          </div>
         )
