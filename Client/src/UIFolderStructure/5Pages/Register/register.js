@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import "./login.scss"
-export default class Login extends Component {
+
+export default class Register extends Component {
     render() {
         return (
             <div className="parent-wrapper">
