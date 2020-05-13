@@ -5,6 +5,15 @@ import "./home.scss"
 import bookdata from './../../../Constant/booklist.json'
 
 export default class Home extends Component {
+     constructor(props){
+        super(props);
+        this.state={
+
+        }
+    }
+    loginForm=(id01 )=>{
+        console.log("vikash");
+    }
     render() {
         return (
             <div>
@@ -14,9 +23,21 @@ export default class Home extends Component {
                             <font className="header"><i className="fad fa-books" aria-hidden="true"></i>BOOK STORE</font>
                             <SearchInputBox inputType="text" placeholder="Search for produts brands, and more" name="search"/>
                             <input type="button" value="search" className="search" />
-                            <input type="button" value="Login" className="login" />
+                            <button onClick={(id01) => this.loginForm(id01)} className="login">Login</button>
                             <font className="arr more" >More &#9663;</font>
                             <font><i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart</font>
+                            <div id="id01" class="modal">
+                                <div class="container modal-content">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required/>
+
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required/>
+                                        
+                                    <button type="submit">Login</button>
+                                
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
