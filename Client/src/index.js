@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 
-import allReducer from './reducers';
+import allReducer from './Reducers';
 import App from './App';
 
 import './Assets/BaseStyle/baseStyle.scss'
@@ -18,11 +18,10 @@ const store = createStore(
     );
 
 ReactDOM.render(
-        <Provider store = {store} clasName="container-fluid">
+        <Provider store = {store} >
             <App/>
         </Provider>,
         document.getElementById('root')
-    
     )
 
 
