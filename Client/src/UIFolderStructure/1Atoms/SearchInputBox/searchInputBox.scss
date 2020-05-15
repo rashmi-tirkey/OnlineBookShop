@@ -1,0 +1,27 @@
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+@media (min-width: 992px) {
+    .form-group {
+        color: red;
+        .form-control-feedback{
+            right: 15px;
+            top: 5px;
+            height: 35px !important;
+            color: #2874f0;
+            font-weight: 500;
+        }
+        .form-control {
+            height: 35px !important;
+            font-size: 16px;
+        }
+    }
+}

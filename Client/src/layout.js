@@ -8,7 +8,7 @@ import Register from './UIFolderStructure/5Pages/Register/register'
 export default class Layout extends Component {
     render() {
         return (
-            <div className="x">
+            <div className="layout-router-wrapper">
                 <Router>
                     <div className="parent-wrapper">
                         <Switch>
